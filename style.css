@@ -2,19 +2,64 @@
     box-sizing: border-box;
 }
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'inter', sans-serif;
     margin: 0;
 }
 
-/* HEADER */
+/* ==== HEADER ==== */
 /* Hero bagian atas halaman */
 
 .hero {
-    padding: 80px;
-    text-align: center;
+    padding: 100px;
+    text-align: left;
     background-position: center;
     background-size: cover;
     background-color: gray;
     color: white;
     padding: 150px;
+}
+
+.hero {
+    font-size: 40px;
+}
+
+.hero p{
+    font-size: 20px;
+    margin: 0;
+}
+
+.logo {
+    position: absolute;
+    top: 20px;
+    left: 10px;
+    width: 30px;
+    height: auto;
+}
+
+/* ========== navbar ========== */
+/*  Navbar Utama */
+.navbar {
+    position: relative;
+    /*  Untuk posisi tombol close */
+    overflow: hidden;
+    background-color: grey;
+    position: sticky;
+    top: 0%;
+    display: flex;
+    justify-content: flex-end;
+    /* Link rata kanan */
+    gap: 10px;
+}
+.navbar a{
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 14px 20px;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    transition: background 0.2s, color 0.2s;
+}
+.navbar a:hover{
+    background-color: white;
+    color: black;
+    transition: 0,5s;
 }
