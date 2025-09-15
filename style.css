@@ -2,39 +2,90 @@
     box-sizing: border-box;
 }
 body {
-    font-family: 'inter', sans-serif;
     margin: 0;
+    font-family: Arial , sans-serif;
+    background-color: #5b4545;
+    color: white;
+}
+.container {
+  display: flex; 
+  justify-content: space-between; 
+  align-items: center; 
+  max-width: 1200px;
+  margin: auto;
 }
 
 /* ==== HEADER ==== */
 /* Hero bagian atas halaman */
 
-.hero {
-    padding: 100px;
-    text-align: left;
-    background-position: center;
-    background-size: cover;
-    background-color: gray;
+.hero{
+    flex: 1
+}
+
+.hero h1{
+    margin-bottom: 20px;
+}
+
+.image{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.image img{
+    max-width: 80%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+}
+
+/* Bagian anggota kelompok */
+
+.anggota-section{
+    background-color: #5b4545;
     color: white;
-    padding: 150px;
+    padding: 60px 20px;
+    text-align: center;
+}
+.title{
+    font-size: 36px;
+    margin-bottom: 40px;
+    background-color: #7a6868;
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 8px;
 }
 
-.hero {
-    font-size: 40px;
+.gallery{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.foto{
+    width: 180px;
+  height: 280px;
+  padding: 10px;
+  background: #7a5e5e;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.foto img{
+  height: 220px;         
+  object-fit: cover;     
+  border-radius: 10px;
+  width: 100%;
+}
+.foto p{
+    margin-top: 8px;
+    font-weight: bold;
+    color: #f0eaea
 }
 
-.hero p{
-    font-size: 20px;
-    margin: 0;
-}
 
-.logo {
-    position: absolute;
-    top: 20px;
-    left: 10px;
-    width: 30px;
-    height: auto;
-}
 
 /* ========== navbar ========== */
 /*  Navbar Utama */
@@ -42,7 +93,7 @@ body {
     position: relative;
     /*  Untuk posisi tombol close */
     overflow: hidden;
-    background-color: grey;
+    background-color: #5b4545;
     position: sticky;
     top: 0%;
     display: flex;
@@ -62,4 +113,100 @@ body {
     background-color: white;
     color: black;
     transition: 0,5s;
+}
+
+/* Tujuan */
+.tujuan {
+  background-color: #6b5a5a;
+  padding: 30px;
+  margin-top: 30px;
+  border-radius: 10px;
+}
+
+.tujuan h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #fff;
+  background: #8a6b6b;   
+  display: inline-block;
+  padding: 8px 20px;
+  border-radius: 10px;
+}
+
+
+.isi-tujuan {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.isi-tujuan img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.isi-tujuan p {
+  flex: 1;
+  color: #fff;
+  line-height: 1.6;
+}
+
+
+/* contact */
+.kontak {
+  background-color: #6b5a5a;
+  padding: 30px;
+  margin-top: 30px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.kontak h2 {
+  background: #8a6b6b;
+  display: inline-block;
+  padding: 8px 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.form-kontak {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.form-baris {
+  display: flex;
+  gap: 15px;
+}
+
+.form-kontak input,
+.form-kontak textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+}
+
+.form-kontak textarea {
+  height: 100px;
+  resize: none;
+}
+
+.form-kontak button {
+  background: #8a6b6b;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.form-kontak button:hover {
+  background: #9c7474;
 }
